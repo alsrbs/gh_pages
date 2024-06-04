@@ -2,14 +2,15 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://alsrbs.github.io/gh_pages/",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export", 
     "start": "next start",
     "lint": "next lint",
-    "deploy": "gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out --dotfiles"
   },
-  "homepage": "https://alsrbs.github.io/gh_pages/",
   "dependencies": {
     "next": "14.2.3",
     "react": "^18",
