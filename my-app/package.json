@@ -6,8 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "gh-pages -d build"
   },
+  "homepage": "https://alsrbs.github.io/gh_pages/",
   "dependencies": {
     "next": "14.2.3",
     "react": "^18",
